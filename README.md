@@ -28,14 +28,23 @@ Runs the process if the image of Redis is present else downloads it from the pub
 Pull only the Image without running
 - docker pull nginx
 
-
-
 ## Basic commands
 Outputs a list of docker containers
 - docker ps
 - docker ps -a
 - docker container -ls
 
-List the available images
+List the available images in the host
 - docker images
+Remove An image form the host
+Caution: Make sure no containers are attached to the image before removing an image
+- docker -rmi imagename
+
+## Image Tag
+Image tag is the version of image you want to download from the docker hub. By default it downloads the latest tag
+
+## Port
+`docker run -p 80:5000 imageName`
+The above command is used to access port 5000 of the docker when port 80 is requested from the Host machine (host machine means the machine running the docker)
+
 
