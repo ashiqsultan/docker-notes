@@ -54,3 +54,25 @@ docker inspect containerName
 
 ## Environment Variables
 ` docker run -e NODE_ENV=production imageNAme`
+
+## Difference between ENTRYPOINT and CMD in Docker file
+### CMD
+A CMD is fully executed statement
+If you need to replace the command while docker run imagename
+```
+CMD sleep 10
+// or
+CMD ["sleep","10"]
+```
+
+`docker run ubuntu sleep 10`
+
+### ENTRYPOINT
+```
+ENTRYPOINT ["sleep"]
+```
+`docker run ubuntu 10`
+This is understood by the machine as **ubuntu sleep 10**. As the ENTRYPOINT is perpended before the command you give while executing docker run
+
+
+
