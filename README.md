@@ -44,8 +44,13 @@ Caution: Make sure no containers are attached to the image before removing an im
 ## Image Tag
 Image tag is the version of image you want to download from the docker hub. By default it downloads the latest tag
 
-## Port
+## Port mapping
 `docker run -p 80:5000 imageName`
 The above command is map a container running on port 5000 when port 80 is requested from the Host machine
 
+## Inspect
+Gives details about the container
+docker inspect containerName
 
+## Environment Variables
+` docker run -e NODE_ENV=production imageNAme`
