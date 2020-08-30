@@ -74,5 +74,6 @@ ENTRYPOINT ["sleep"]
 `docker run ubuntu 10`
 This is understood by the machine as **ubuntu sleep 10**. As the ENTRYPOINT is perpended before the command you give while executing docker run
 
-
+## Networking
+![networking in docker](https://github.com/ashiqsultan/docker-notes/raw/master/docker-networks.png)
 
