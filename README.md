@@ -1,24 +1,41 @@
 # docker-notes
 
-Youtuube: [Full Video Link](https://www.youtube.com/watch?v=fqMOX6JJhGo)
+Youtube: [Full Video Link](https://www.youtube.com/watch?v=fqMOX6JJhGo)
 ## Basics
-Docker runs on top of an OS. In other words a OS runs a single docker service
-Difference between docker and traditional VM is that
+- A Docker is like any other service running on an OS
+- A Docker runs other process like Redis or Nginx we call each process being run by the docker as **Container**
+- Docker is not ment to run OS as a process
+- Its for running an instance of web application, a server or just a computation
+
+## Difference between Docker and traditional VM
 - An OS runs inside VM which runs services like Redis or MongoDB
 - A Docker runs services like MongoDB or Redis without the need of OS
 
-So as soon as the process is stopped the docker is also stopped
+## A container is alive only as long as the process inside is alive
+- Once the task or computaion stops or completes or crashes the container exists
+- i.e the container is alive as long as the process inside is alive
+- That's why if you run an Ubuntu image as a container it exits immediately, because an OS doesn't run any process by default
+- If you want you could execute a command for the process (container) which is going to be started by the docker run
+```
+docker run ubuntu sleep 100
+docker run imagename command-to-be-executed-in-the-starting-container
+```
+In the above example the container executes the Sleep for 100 seconds and the container exits or stops after the command has finished executing
 
 ## Creating new containers
-- docker run nginx
-- docker run redis
-
 Runs the process if the image of Redis is present else downloads it from the public repository
+- docker run redis
+Pull only the Image without running
+- docker pull nginx
+
+
 
 ## Basic commands
-- docker ps
 Outputs a list of docker containers
+- docker ps
+- docker ps -a
 - docker container -ls
-Same as above
-- docker images
+
 List the available images
+- docker images
+
