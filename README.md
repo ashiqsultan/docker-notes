@@ -3,9 +3,10 @@
 Youtube: [Full Video Link](https://www.youtube.com/watch?v=fqMOX6JJhGo)
 ## Basics
 - A Docker is like any other service running on an OS
-- A Docker runs other process like Redis or Nginx we call each process being run by the docker as **Container**
+- A Docker runs other process like Redis or Nginx, we call each process run by the docker as **Container**
 - Docker is not ment to run OS as a process
 - Its for running an instance of web application, a server or just a computation
+- Terminology: A Docker Host or host machine means the machine running the docker deamon
 
 ## Difference between Docker and traditional VM
 - An OS runs inside VM which runs services like Redis or MongoDB
@@ -45,6 +46,6 @@ Image tag is the version of image you want to download from the docker hub. By d
 
 ## Port
 `docker run -p 80:5000 imageName`
-The above command is used to access port 5000 of the docker when port 80 is requested from the Host machine (host machine means the machine running the docker)
+The above command is map a container running on port 5000 when port 80 is requested from the Host machine
 
 
