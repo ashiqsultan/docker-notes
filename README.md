@@ -52,6 +52,11 @@ The above command is map a container running on port 5000 when port 80 is reques
 Gives details about the container
 docker inspect containerName
 
+## Open Bash | Terminal | Shell in a docker container
+```
+docker exec -it container-name /bin/bash
+```
+
 ## Environment Variables
 ` docker run -e NODE_ENV=production imageNAme`
 
