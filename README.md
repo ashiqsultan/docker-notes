@@ -87,5 +87,12 @@ This is understood by the machine as **ubuntu sleep 10**. As the ENTRYPOINT is p
 `docker-compose up`
 Run in detached mode
 `docker-compose up -d`
+The docker-compose requires a yml file named `docker-compose.yml`.
 
+### List down Services in the compose file
+`docker-compose config --services`
+### List the required images in the compose
+`docker-compose images`
+### Logs
+`docker-compose logs`
 
