@@ -96,3 +96,22 @@ The docker-compose requires a yml file named `docker-compose.yml`.
 ### Logs
 `docker-compose logs`
 
+# Volumes
+## Create a volume
+```
+docker volume create any-name
+```
+## List volumes
+```
+docker volume ls
+```
+## Inspect a volumes
+```
+docker volume inspect the-volume-name
+```
+## Remove a volumes
+You cannot remove the volume of a running container
+```
+docker volume rm the-volume-name
+```
+
