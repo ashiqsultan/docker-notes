@@ -82,3 +82,9 @@ This is understood by the machine as **ubuntu sleep 10**. As the ENTRYPOINT is p
 ## Networking
 ![networking in docker](https://github.com/ashiqsultan/docker-notes/raw/master/docker-networks.png)
 
+# docker-compose
+## Build and run
+`docker-compose up`
+`docker-compose up -d`
+
+
