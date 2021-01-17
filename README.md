@@ -114,4 +114,10 @@ You cannot remove the volume of a running container
 ```
 docker volume rm the-volume-name
 ```
-
+## Attach a volume to a container
+```
+docker run -itd --volume my-vol:/home/app ubuntu:latest
+```
+The above command creates an ubuntu container in which the container's `/home/app` directory is stored in our host's local machine
+Which means you can use this volume in multiple containers and the data can be shared between containers.
+You should use named volumes when you are using docker-compose
