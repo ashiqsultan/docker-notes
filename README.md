@@ -85,6 +85,7 @@ This is understood by the machine as **ubuntu sleep 10**. As the ENTRYPOINT is p
 # docker-compose
 ## Build and run
 `docker-compose up`
+Run in detached mode
 `docker-compose up -d`
 
 
